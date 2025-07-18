@@ -20,8 +20,8 @@ const createCheckoutSession = async (req, res) => {
           quantity: 1,
         },
       ],
-      success_url: "http://localhost:5173/PaymentSuccess",
-      cancel_url: "http://localhost:5173/profile",
+      success_url: "https://gyanpath2-frontend.onrender.com/PaymentSuccess",
+      cancel_url: "https://gyanpath2-frontend.onrender.com/profile",
     });
 
     res.json({ id: session.id });
